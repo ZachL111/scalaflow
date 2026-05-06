@@ -1,0 +1,6 @@
+name,focus,signal,slack,drag,confidence,score,lane
+baseline,event-time skew,40,38,24,51,97,hold
+stress,late input,78,43,20,46,185,ship
+edge,window pressure,50,38,20,82,160,ship
+recovery,sink lag,70,23,26,91,176,ship
+stale,event-time skew,64,33,29,81,155,ship

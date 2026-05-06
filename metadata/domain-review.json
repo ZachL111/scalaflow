@@ -1,0 +1,73 @@
+{
+  "repo": "scalaflow",
+  "language": "Scala",
+  "category": "Stream processing",
+  "goal": "Implement typed stream windows, maps, and sink contracts.",
+  "review_model": {
+    "terms": [
+      "event-time skew",
+      "late input",
+      "window pressure",
+      "sink lag"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "event-time skew",
+      "signal": 40,
+      "slack": 38,
+      "drag": 24,
+      "confidence": 51,
+      "score": 97,
+      "lane": "hold"
+    },
+    {
+      "name": "stress",
+      "focus": "late input",
+      "signal": 78,
+      "slack": 43,
+      "drag": 20,
+      "confidence": 46,
+      "score": 185,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "window pressure",
+      "signal": 50,
+      "slack": 38,
+      "drag": 20,
+      "confidence": 82,
+      "score": 160,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "sink lag",
+      "signal": 70,
+      "slack": 23,
+      "drag": 26,
+      "confidence": 91,
+      "score": 176,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "event-time skew",
+      "signal": 64,
+      "slack": 33,
+      "drag": 29,
+      "confidence": 81,
+      "score": 155,
+      "lane": "ship"
+    }
+  ]
+}
