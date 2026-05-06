@@ -1,0 +1,7 @@
+name,demand,capacity,latency,risk,weight,score,decision,reason
+baseline,59,86,16,15,9,166,accept,stream processing baseline scenario keeps the local fixture within the modeled acceptance band
+pressure,76,76,27,18,10,162,accept,stream processing pressure scenario keeps the local fixture within the modeled acceptance band
+surge,102,100,19,12,13,296,accept,stream processing surge scenario keeps the local fixture within the modeled acceptance band
+degraded,73,59,32,29,8,73,review,stream processing degraded scenario exercises the review path for bounded failure handling
+recovery,85,103,19,10,9,249,accept,stream processing recovery scenario keeps the local fixture within the modeled acceptance band
+boundary,72,79,24,19,8,147,review,stream processing boundary scenario exercises the review path for bounded failure handling
