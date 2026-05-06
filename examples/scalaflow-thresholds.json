@@ -1,0 +1,17 @@
+{
+  "repo": "scalaflow",
+  "thresholds": {
+    "signal": 4,
+    "slack": 1,
+    "confidence": 1,
+    "drag": 4,
+    "ship": 192,
+    "watch": 97
+  },
+  "terms": [
+    "event-time skew",
+    "late input",
+    "window pressure",
+    "sink lag"
+  ]
+}
